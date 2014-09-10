@@ -43,6 +43,7 @@ public class Eventos extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton btnNewButton = new JButton("Boton");
+		JButton btnBoton = new JButton("Boton2");
 
 		
 		// registra los manejadores de eventos
@@ -50,14 +51,17 @@ public class Eventos extends JFrame {
 		
 		btnNewButton.setBounds(21, 24, 89, 23);
 		contentPane.add(btnNewButton);
+		btnBoton.setBounds(21, 72, 89, 23);
+		contentPane.add(btnBoton);
 		
 		btnNewButton.addActionListener( manejador );
+		btnBoton.addActionListener( manejador );
 		
 
 	}
 	
 	// clase interna para manejar eventos de botón
-	private class ManejadorEventosBoton implements ActionListener
+class ManejadorEventosBoton implements ActionListener
 	{
 	// maneja evento de botón
 		public void actionPerformed( ActionEvent evento )
