@@ -42,7 +42,9 @@ public class Eventos extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("Boton");		
+		JButton btnNewButton = new JButton("Boton");
+
+		
 		// registra los manejadores de eventos
 		ManejadorEventosBoton manejador = new ManejadorEventosBoton();
 		
