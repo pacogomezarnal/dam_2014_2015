@@ -61,12 +61,12 @@ public class Eventos extends JFrame {
 	}
 	
 	// clase interna para manejar eventos de botón
-class ManejadorEventosBoton implements ActionListener
-	{
-	// maneja evento de botón
-		public void actionPerformed( ActionEvent evento )
+	class ManejadorEventosBoton implements ActionListener
 		{
-			JOptionPane.showMessageDialog( Eventos.this, String.format("Usted oprimio: %s", evento.getActionCommand() ) );
+		// maneja evento de botón
+			public void actionPerformed( ActionEvent evento )
+			{
+				JOptionPane.showMessageDialog( Eventos.this, String.format("Usted oprimio: %s", evento.getActionCommand() ) );
+			}
 		}
-	}
 }
