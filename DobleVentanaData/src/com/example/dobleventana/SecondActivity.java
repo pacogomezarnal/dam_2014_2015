@@ -22,8 +22,8 @@ public class SecondActivity extends Activity {
 		Intent primera=getIntent();
 		
 		//REcuperamos y colocamos la información de cada uno de los datos
-        final TextView user=(TextView) findViewById(R.id.TextView03);
-        final TextView passwd=(TextView) findViewById(R.id.TextView02);
+        final TextView user=(TextView) findViewById(R.id.TextView02);
+        final TextView passwd=(TextView) findViewById(R.id.TextView03);
         
         //Colocamos la información
         user.setText(primera.getStringExtra("usuario"));
