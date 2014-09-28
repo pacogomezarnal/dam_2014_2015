@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class FirstActivity extends Activity {
 	
@@ -20,7 +21,10 @@ public class FirstActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_first);
 		
+		//Capturamos los diferentes Views de la primera pantalla gráfica
         final Button boton=(Button) findViewById(R.id.button1);
+        final EditText user=(EditText) findViewById(R.id.editText1);
+        final EditText passwd=(EditText) findViewById(R.id.editText2);
         
         boton.setOnClickListener(new Button.OnClickListener(){
 
@@ -30,6 +34,9 @@ public class FirstActivity extends Activity {
 							FirstActivity.this,
 							SecondActivity.class
 							);
+					//En el Intent enviamos la información de la primera ventana
+					segunda.putExtra("usuario", user.getText().toString());
+					segunda.putExtra("pass", passwd.getText().toString());
 					startActivity(segunda);
 					
 				}
