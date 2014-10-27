@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListarTexto</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="colores">
+        <item >amarillo</item>
+        <item >rojo</item>
+        <item >verde</item>
+        <item >naranja</item>
+        <item >gris</item>
+        <item >negro</item>
+    </string-array>
+
+</resources>
